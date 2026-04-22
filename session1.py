@@ -2,11 +2,11 @@ print ("hello world") # string datatype,enclosed in quotations
 
 student_name = "John" 
 
-age = 25
+age = 25  #integer
 
 marks = 90
 
-datatype_bool = True
+datatype_bool = True #boolean
 
 print(marks)
 
@@ -14,7 +14,7 @@ no_1 = 10
 
 no_2 = 25
 
-no_3 = 40.5
+no_3 = 40.5         # float
 
 no_4 = 44.2
 
