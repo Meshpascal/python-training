@@ -41,37 +41,42 @@ print(100**1/2) # exponential"""
 #2.2 DATATYPES
 
 # 2.3 OPERATORS
+<<<<<<< HEAD
 
 print(100>50) #greater than
 print(100<50)
 print(100>=50)
 print(100<=50)
 print(100!=50)
+=======
+#LISTS
+#Track land parcels IDs
+parcels = ["P001" , "P002" , "P003"]
+>>>>>>> 5e76307a561f5735400114cba3fca9ceeebcba3f
 
-#2.4 input and output
-# print and input are used for input and output
+parcels.append("P001") #ADD
 
-id_number= input("enter id:  ")
+parcels.insert(1, "P001B") #INSERT
 
-print("Your ID number is:"+ id_number)
-print(type(id_number))
-Id_2=int(input("enter id_2:  "))
-print(type(Id_2))
-print(float(50))
+parcels.remove("P002") # DELETE
 
-#DATA STRUCTURES
-#list denoted by:[]separated by commas
 
-fruits=["banana,mango"]
+#TUPLES
+Capital_cities =("Nairobi","Dodoma","Kampala","washinngton")
 
-#tuples list that cannot be changed after creation denoted by ()
+print(Capital_cities[0])
 
-fruit=("mango,banana,apples")
+#sets
+survey_A = {"Nairobi", "Mombasa" ,...}
+survey_B = {"Kisumu", "Nakuru", ...}
 
-#sets store unique items denoted by {} prevents duplication
+# Union- all covered counties
+print(survey_A | survey_B)
 
-names={"warren,Lemein,Meingati"}
+# intersection - in both surveys
+print(survey_A & survey_B)
 
+<<<<<<< HEAD
 #dictionary is just like sets but separated using a colon 
 student={
     "reg:FGS35474,"
@@ -120,3 +125,49 @@ labels = [
 
 for name, (lat, lon) in zip(labels, coordinates):
     print(f"{name}: lat={lat}, lon={lon}")
+=======
+# DIFFERENCE- ONLY IN SURVEY A
+print(survey_A - survey_B)
+
+survey_A.add("Nairobi")
+
+print(survey_A)
+
+#DICTIONARIES\
+student = {
+    "name" : "Meshack" , 
+    "age" :  21 ,
+    "nationality" : "Kenyan"
+ }
+
+print(student)
+print(student["name"])
+
+#inputs
+student_2 = {}
+name_2 = input("Enter your name")
+student_2["name"  ]= name_2
+
+print(student_2)
+
+print(student.keys())
+
+print(student.values())
+
+#indexing and slicing
+fruits=['apple', 'banana', 'mango', 'pineapple']
+
+print(fruits[0])
+
+print(fruits[0:2])
+
+print(fruits[:3])
+
+print(fruits[-1]) # starts from the last one
+
+print(fruits[1:3]) # starting from the middle
+
+print(fruits[::2])
+
+print(fruits[-1:])
+>>>>>>> 5e76307a561f5735400114cba3fca9ceeebcba3f
