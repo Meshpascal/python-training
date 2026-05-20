@@ -85,8 +85,38 @@ temperature =32
 
 if temperature > 30:
 
-print ("it is hot outside")
+ print ("it is hot outside")
 
 elif temperature > 20:
 
-print("Nice weather")
+ print("Nice weather")
+# memebersgip test with in
+east_african_capitals = [
+    "Nairobi",
+    "Kampala",
+    "Kigali",
+    "Dodoma"
+]
+
+city = "Nairobi"
+
+if city in east_african_capitals:
+    print(f"{city} is an East African capital")
+
+    # for loops - iterating over collections
+    #1 zip(iterate coordinates)
+
+coordinates = [
+    (-1.28, 36.82),
+    (0.52, 35.227),
+    (-4.05, 39.67)
+]
+
+labels = [
+    "Nairobi",
+    "Eldoret",
+    "Mombasa"
+]
+
+for name, (lat, lon) in zip(labels, coordinates):
+    print(f"{name}: lat={lat}, lon={lon}")
