@@ -35,12 +35,13 @@ print(type(student_name)) # gives the datatype
 print(type(datatype_bool))
 
 print(100**1/2) # exponential"""
-
+"""""
 # 2.1 VARIABLES
 
 #2.2 DATATYPES
 
 # 2.3 OPERATORS
+
 print(100>50) #greater than
 print(100<50)
 print(100>=50)
@@ -77,3 +78,15 @@ student={
     "AGE:25,"
     "JOIN:2024"
 }
+"""
+# Control flows
+#if else statements - making decisions
+temperature =32
+
+if temperature > 30:
+
+print ("it is hot outside")
+
+elif temperature > 20:
+
+print("Nice weather")
